@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="row manage-employee-wrapper">
+        <div class="col content">
+            <h4>Manage Employee</h4>
+        </div>
+        <div class="col content">
+            <input class="form-control" type="text" name="search" [(ngModel)]="searchQuery" alt="search"
+                placeholder="search" />
+        </div>
+        <div class="col content">
+            <button routerLink="/employee-edit" class="btn btn-primary add">Add</button>
+        </div>
+    </div>
+    <table class="table table-striped table-dark">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Emp id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Designation</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Change</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngIf="!searchQuery">
+                <tr
+                    *ngFor="let employee of employeeDetails | paginate: { itemsPerPage: 5, currentPage: p }; let i = index">
+                    <th #employeeId scope="row">{{employee.id}}</th>
+                    <td>{{employee.name}}</td>
+                    <td>{{employee.designation}}</td>
+                    <td>{{employee.salary}}</td>
+                    <td class="icon-wrapper">
+                        <div class="icon edit-icon" (click)="onEdit(employee)">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="icon delete-icon" data-toggle="modal" (click)="openModal(employee.id)">
+                            <i class="fa fa-trash"></i>
+                        </div>
+
+                    </td>
+                </tr>
+            </ng-container>
+
+            <ng-container *ngIf="searchQuery">
+                <tr
+                    *ngFor="let employee of employeeDetails | search : searchQuery  | paginate: { itemsPerPage: 5, currentPage: p }; let i = index">
+                    <th #employeeId scope="row">{{employee.id}}</th>
+                    <td>{{employee.name}}</td>
+                    <td>{{employee.designation}}</td>
+                    <td>{{employee.salary}}</td>
+                    <td class="icon-wrapper">
+                        <div class="icon edit-icon" (click)="onEdit()">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="icon delete-icon" data-toggle="modal" (click)="openModal(employee.id)">
+                            <i class="fa fa-trash"></i>
+                        </div>
+
+                    </td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+
+    <pagination-controls class="pagination" (pageChange)="p=$event"></pagination-controls>
+
+
+    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModal">Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are You Sure? You Wanna Delete Employee Record
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" (click)="onDelete()">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

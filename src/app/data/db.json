@@ -1,0 +1,64 @@
+{
+  "employees": [
+    {
+      "name": "James Butt",
+      "designation": "Software Engineer",
+      "salary": "450000",
+      "id": 1
+    },
+    {
+      "name": "Josephine Darakjy",
+      "designation": "Software Tester",
+      "salary": "550000",
+      "id": 2
+    },
+    {
+      "name": "Lenna Paprocki",
+      "designation": "Desktop Support",
+      "salary": "450000",
+      "id": 3
+    },
+    {
+      "name": "Donette Foller",
+      "designation": "Admin",
+      "salary": "350000",
+      "id": 4
+    },
+    {
+      "name": "Mitsue Tollner",
+      "designation": "Sales Manager",
+      "salary": "650000",
+      "id": 5
+    },
+    {
+      "name": "Foller Donette",
+      "designation": "Software Engineer",
+      "salary": "800000",
+      "id": 6
+    },
+    {
+      "name": "Leota Dilliard",
+      "designation": "Software Tester",
+      "salary": "650000",
+      "id": 7
+    },
+    {
+      "name": "Abel Maclead",
+      "designation": "Desktop Support",
+      "salary": "350000",
+      "id": 8
+    },
+    {
+      "name": "Kiley Caldarera",
+      "designation": "Human Resource",
+      "salary": "550000",
+      "id": 9
+    },
+    {
+      "name": "Cammy Albares",
+      "designation": "Analyst",
+      "salary": "500000",
+      "id": 10
+    }
+  ]
+}

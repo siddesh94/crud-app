@@ -1,0 +1,37 @@
+<div class="container form-wrapper">
+    <div class="wrapper">
+        <div class="row">
+            <h2 class="employee-details">Employee Detail</h2>
+        </div>
+
+        <div class="row">
+            <form [formGroup]="employeeForm" (ngSubmit)="onSubmit(employeeForm.value)">
+                <div>
+                    Name:
+                    <input type="text" formControlName="name">
+                </div>
+                <div>
+                    Designation:
+                    <input type="text" formControlName="designation">
+                </div>
+                <div>
+                    Salary:
+                    <input type="number" formControlName="salary">
+                </div>
+                <ng-container *ngIf="!isUpdate"><button class="submit" type="submit"
+                        [disabled]="!employeeForm.valid">Add</button></ng-container>
+                <ng-container *ngIf="isUpdate">
+                    <div class="update-button">
+                        <div class="save">
+                            <button class="submit btn-save" type="submit" (click)="onSave(employeeForm.value)"
+                                [disabled]="!employeeForm.valid">save</button>
+                        </div>
+                        <div class="close-form">
+                            <button class="submit btn-close" (close)="onClose()" type="button">close</button>
+                        </div>
+                    </div>
+                </ng-container>
+            </form>
+        </div>
+    </div>
+</div>

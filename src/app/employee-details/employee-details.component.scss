@@ -1,0 +1,39 @@
+.icon-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+.add {
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+
+.manage-employee-wrapper {
+    margin: 20px 0px;
+}
+
+.content {
+    margin: 0px auto;
+}
+table {
+    text-align: center;
+}
+
+.icon {
+    cursor: pointer;
+}
+.edit-icon:hover {
+    color: #157af6;
+}
+.delete-icon:hover {
+    color: red;
+}
+
+
+.pagination {
+    justify-content: center;
+}
