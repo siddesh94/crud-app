@@ -45,6 +45,7 @@ export class EmployeeEditComponent implements OnInit {
 
     this.http.addEmployee(data).subscribe((response) => {
       if (response) {
+        this.dataStore.resetData();
         console.log('added successfully');
         this.router.navigateByUrl('/');
       }
@@ -62,6 +63,7 @@ export class EmployeeEditComponent implements OnInit {
     data.id = this.employeeId;
     this.http.updateEmployee(data).subscribe((response) => {
       if (response) {
+        this.dataStore.resetData();
         console.log('updated Successfully');
         this.router.navigateByUrl('/');
       } else {
