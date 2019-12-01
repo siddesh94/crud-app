@@ -18,8 +18,12 @@
                     Salary:
                     <input type="number" formControlName="salary">
                 </div>
-                <ng-container *ngIf="!isUpdate"><button class="submit" type="submit"
-                        [disabled]="!employeeForm.valid">Add</button></ng-container>
+                <ng-container *ngIf="!isUpdate">
+                    <button class="submit submit-add" type="submit" [disabled]="!employeeForm.valid">Add</button>
+                    <!-- <div class="close-form"> -->
+                            <button class="submit btn-close" routerLink="/" (close)="onClose()" type="button">close</button>
+                    <!-- </div> -->
+                    </ng-container>
                 <ng-container *ngIf="isUpdate">
                     <div class="update-button">
                         <div class="save">
