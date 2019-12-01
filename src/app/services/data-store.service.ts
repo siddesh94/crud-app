@@ -27,4 +27,11 @@ export class DataStoreService {
   getData() {
     return this.employee;
   }
+
+  resetData() {
+    this.employee.name = '';
+    this.employee.designation = '';
+    this.employee.salary = '';
+    this.employee.id = null;
+  }
 }

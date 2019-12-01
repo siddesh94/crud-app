@@ -53,6 +53,7 @@ export class EmployeeEditComponent implements OnInit {
     });
   }
   onClose() {
+    this.dataStore.resetData();
     this.router.navigateByUrl('/');
   }
 
