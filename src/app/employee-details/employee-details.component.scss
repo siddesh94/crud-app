@@ -4,9 +4,6 @@
     align-items: center;
 }
 
-.content {
-    text-align: center;
-}
 .add {
     padding: 3px 20px;
     border-radius: 20px;
@@ -18,9 +15,16 @@
 
 .content {
     margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cotainer-details {
+    padding-top: 15px;
 }
 table {
     text-align: center;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .icon {

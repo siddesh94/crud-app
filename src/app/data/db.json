@@ -3,62 +3,92 @@
     {
       "name": "James Butt",
       "designation": "Software Engineer",
-      "salary": "450000",
+      "salary": 550000,
       "id": 1
     },
     {
       "name": "Josephine Darakjy",
       "designation": "Software Tester",
-      "salary": "550000",
+      "salary": 550000,
       "id": 2
     },
     {
       "name": "Lenna Paprocki",
       "designation": "Desktop Support",
-      "salary": "450000",
+      "salary": 450000,
       "id": 3
     },
     {
       "name": "Donette Foller",
       "designation": "Admin",
-      "salary": "350000",
+      "salary": 350000,
       "id": 4
     },
     {
       "name": "Mitsue Tollner",
       "designation": "Sales Manager",
-      "salary": "650000",
+      "salary": 650000,
       "id": 5
     },
     {
       "name": "Foller Donette",
       "designation": "Software Engineer",
-      "salary": "800000",
+      "salary": 800000,
       "id": 6
     },
     {
       "name": "Leota Dilliard",
       "designation": "Software Tester",
-      "salary": "650000",
+      "salary": 650000,
       "id": 7
     },
     {
       "name": "Abel Maclead",
       "designation": "Desktop Support",
-      "salary": "350000",
+      "salary": 350000,
       "id": 8
     },
     {
       "name": "Kiley Caldarera",
       "designation": "Human Resource",
-      "salary": "550000",
+      "salary": 550000,
       "id": 9
     },
     {
       "name": "Cammy Albares",
       "designation": "Analyst",
-      "salary": "500000",
+      "salary": 500000,
       "id": 10
+    },
+    {
+      "name": "Alex Parker",
+      "designation": "Admin",
+      "salary": 545000,
+      "id": 11
+    },
+    {
+      "name": "Peter Parker",
+      "designation": "Human Resource",
+      "salary": 450000,
+      "id": 12
+    },
+    {
+      "name": "Anee Annet",
+      "designation": "CEO",
+      "salary": 900000,
+      "id": 13
+    },
+    {
+      "name": "Utsab D",
+      "designation": "Designer",
+      "salary": 750000,
+      "id": 14
+    },
+    {
+      "name": "Angeline",
+      "designation": "Tester",
+      "salary": 700000,
+      "id": 15
     }
   ]
 }

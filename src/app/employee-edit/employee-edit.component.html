@@ -1,11 +1,11 @@
 <div class="container form-wrapper">
     <div class="wrapper">
-        <div class="row">
+        <div class="row employee-details-text">
             <h2 class="employee-details">Employee Detail</h2>
         </div>
 
         <div class="row">
-            <form [formGroup]="employeeForm" (ngSubmit)="onSubmit(employeeForm.value)">
+            <form class="employee-details-form" [formGroup]="employeeForm" (ngSubmit)="onSubmit(employeeForm.value)">
                 <div>
                     Name:
                     <input type="text" formControlName="name">
@@ -23,11 +23,11 @@
                 <ng-container *ngIf="isUpdate">
                     <div class="update-button">
                         <div class="save">
-                            <button class="submit btn-save" type="submit" (click)="onSave(employeeForm.value)"
+                            <button class="submit btn-save" type="button" (click)="onSave(employeeForm.value)"
                                 [disabled]="!employeeForm.valid">save</button>
                         </div>
                         <div class="close-form">
-                            <button class="submit btn-close" (close)="onClose()" type="button">close</button>
+                            <button class="submit btn-close" routerLink="/" (close)="onClose()" type="button">close</button>
                         </div>
                     </div>
                 </ng-container>

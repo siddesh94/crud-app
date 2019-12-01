@@ -24,7 +24,7 @@ input {
 
 .submit {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 2px 15px;
     margin-top: 10px;
     border-radius: 16px;
     font-family: 'Nunito', sans-serif;
@@ -33,6 +33,7 @@ input {
     background-color: #00aafb;
     cursor: pointer;
     outline: none;
+    border: none;
 }
 .wrapper {
     margin: 0 auto;
@@ -44,8 +45,8 @@ input {
     background-color: #0099e2;
 }
 button[type=submit]:disabled {
-    opacity: 0.25;
-    cursor: default;
+    opacity: 0.45;
+    cursor: not-allowed;
   }
 
 .update-button {
@@ -63,4 +64,20 @@ button[type=submit]:disabled {
 
 .btn-close:hover {
     background-color: #5a6268;
+}
+
+.employee-details-text {
+    padding: 0 15px;
+    border-bottom: 3px solid #454d55;
+    margin-bottom: 15px;
+    justify-content: center;
+    cursor: default;
+}
+
+.employee-details-form {
+    padding: 15px 20px;
+    background-color: #454d55;
+    color: white;
+    border-radius: 5px;
+    filter: drop-shadow(2px 4px 6px black);
 }

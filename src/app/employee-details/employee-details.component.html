@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container cotainer-details">
     <div class="row manage-employee-wrapper">
         <div class="col content">
             <h4>Manage Employee</h4>
@@ -24,7 +24,7 @@
         <tbody>
             <ng-container *ngIf="!searchQuery">
                 <tr
-                    *ngFor="let employee of employeeDetails | paginate: { itemsPerPage: 5, currentPage: p }; let i = index">
+                    *ngFor="let employee of employeeDetails | paginate: { itemsPerPage: 10, currentPage: p }; let i = index">
                     <th #employeeId scope="row">{{employee.id}}</th>
                     <td>{{employee.name}}</td>
                     <td>{{employee.designation}}</td>
@@ -43,7 +43,7 @@
 
             <ng-container *ngIf="searchQuery">
                 <tr
-                    *ngFor="let employee of employeeDetails | search : searchQuery  | paginate: { itemsPerPage: 5, currentPage: p }; let i = index">
+                    *ngFor="let employee of employeeDetails | search : searchQuery  | paginate: { itemsPerPage: 10, currentPage: p }; let i = index">
                     <th #employeeId scope="row">{{employee.id}}</th>
                     <td>{{employee.name}}</td>
                     <td>{{employee.designation}}</td>

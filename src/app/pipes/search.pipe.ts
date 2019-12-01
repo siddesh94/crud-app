@@ -9,7 +9,7 @@ export class SearchPipe implements PipeTransform {
       return pipeData.filter(item => {
         const name = item.name.toLowerCase();
         const designation = item.designation.toLowerCase();
-        const salary = item.salary.toLowerCase();
+        const salary = (item.salary.toString()).toLowerCase();
         if (pipeFiltering) {
           const filterData = pipeFiltering.toLowerCase();
           return (
